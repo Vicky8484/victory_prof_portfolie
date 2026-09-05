@@ -1,0 +1,206 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/****BODY****/
+body{
+font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--bodybg);
+  cursor: pointer;
+  height: 100vh;
+}
+
+/****LOGO****/
+.logo{
+  color: var(--headertextcolor);
+  font-size: large;
+  font-weight: 400;
+  transition: font-size 0.4s ease;
+}
+
+.forbogstav{
+  color: var(--hover);
+    font-weight:900;
+}
+
+a{
+  text-decoration: none;
+}
+
+.logo:hover{
+  font-size:larger;
+}
+
+/****HEADER****/
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--headerbg);
+    color: var(--textcolor);
+    padding: 1rem;
+    height: 4rem;
+    align-items: center;
+}
+
+  #mobileMenuBtn{
+    display: none;
+  }
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+  color: var(--headertextcolor);
+  transition: color 0.4s ease;
+}
+
+a:hover{
+  color: var(--hover);
+}
+
+button{
+  width: 130px;
+  padding-block: 0.5rem;
+  font-family: "Fira Code", monospace;
+  border-radius: 7px;
+  background-color: var(--headerbtn);
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+button:hover{
+  background-color: var(--hover);
+  color: var(--headertextcolor);
+}
+
+.active{
+  color: var(--hover);
+}
+
+/****KNAPPER (bortset fra headerknap)****/
+.ctaBtn1{
+  background-color: var(--ctabtn1);
+color: var(--headertextcolor);
+}
+
+.ctaBtn2{
+  background-color: var(--ctabtn2);
+  color: var(--headertextcolor);
+}
+
+.ctaBtn2:hover{
+  background-color: var(--hover2);
+ color: var(--headertextcolor);
+}
+
+/****MAIN I DESKTOP****/
+main{
+  width: 80%;
+  margin: auto;
+  background-color: var(--mainbg);
+  color: var(--textcolor);
+}
+
+/********************MOBIL QUERY********************/
+@media screen and (max-width: 800px){
+  header{
+    position: relative;
+    z-index: 2;
+  }
+
+  #mobileMenuBtn{
+    display: block;
+    width: auto;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    line-height: 1;
+    z-index: 3;
+    background-color: var(--headerbg);
+    border: none;
+    color: var(--headertextcolor);
+  }
+
+  #mobileMenuBtn:hover{
+    color: var(--hover);
+  }
+
+  header > #mainNavigation{
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    width: min(80vw, 18rem);
+    height: calc(100vh - 4rem);
+    padding: 2rem;
+    background-color: var(--headerbg);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 2;
+  }
+
+  body.menu-open header > #mainNavigation{
+    transform: translateX(0);
+  }
+
+  header > #mainNavigation ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  body main{
+    width: 100%;
+    display: block;
+  }
+
+  body main .article2{
+    display: none;
+  }
+
+  body main .studSem{
+    display: flex;
+    width: 100%;
+  }
+
+  body main .studSem .textBox{
+    min-width: 0;
+    padding: 1rem;
+  }
+
+  body main .studSem .hobTextBox{
+    min-width: 0;
+    padding: 1rem;
+  }
+
+  body main .studSem .textBox p{
+    width: 100%;
+    max-width: 62ch;
+  }
+
+  body main .studSem .colorBox{
+    min-width: 0;
+  }
+
+  body main .disclaimer2{
+    width: 100%;
+    max-width: 100%;
+  }
+}

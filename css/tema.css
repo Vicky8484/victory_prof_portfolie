@@ -1,0 +1,25 @@
+[data-theme="light"]{
+--bodybg: #e6e6e6;
+--mainbg: #FFFFFF;
+--headerbg: #3B3B3B;
+--textcolor: #000;
+--headertextcolor: #fff;
+--headerbtn: #fff;
+--ctabtn1: #3B3B3B;
+--ctabtn2: #728C4F;
+--hover: #728C4F;
+--hover2: #3B3B3B;
+}
+
+[data-theme="dark"]{
+--bodybg: #2f2f2f;
+--mainbg: #3B3B3B;
+--headerbg: #2C2C2C;
+--textcolor: #fff;
+--headertextcolor: #fff;
+--headerbtn: #fff;
+--ctabtn1: #fff;
+--ctabtn2: #728C4F;
+--hover: #728C4F;
+--hover2: #3B3B3B;
+}

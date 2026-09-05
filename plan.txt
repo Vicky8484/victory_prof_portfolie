@@ -1,0 +1,10 @@
+PLANEN ER:
+
+1. Lav header færdig først - DONE
+2. Lav forside færdig - DONE
+2. Lav studie side færdig - DONE
+4. Lav hobby side færdig - DONE
+5. Lav om mig side færdig
+6. Lav semester sider
+7. Lav mobil version til hver side
+8. Lav mobilmenu

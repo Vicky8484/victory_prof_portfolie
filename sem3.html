@@ -7,12 +7,12 @@
 
     <!-- CSS filer -->
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/forside.css">
     <link rel="stylesheet" href="css/tema.css">
+    <link rel="stylesheet" href="css/sideby.css">
 
     <!-- JS filer -->
      <script src="js/tema.js" defer></script>
-     <script src="js/mobile-menu.js" defer></script>
+    <script src="js/mobile-menu.js" defer></script>
     
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
@@ -25,11 +25,9 @@
         <button id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
         <nav id="mainNavigation">
         <ul>
-            <!-- <li><a>Forside</a></li> -->
+            <li><a href="index.html">Forside</a></li>
             <li><a href="studie.html">Studie</a></li>
-            <!-- <li><a>1. semester</a></li>
-            <li><a>2. semester</a></li>
-            <li><a>3. semester</a></li> -->
+            <li><a class="active">3. semester</a></li>
             <li><a href="hobby.html">Hobby</a></li>
             <li><a href="ommig.html">Om mig</a></li>
         </ul>
@@ -38,20 +36,19 @@
         <button id="changeBtn">Dark mode</button>
     </header>
     <main>
-        <article class="article1">
-            <h3>Hej.</h3>
-            <h1>Jeg er Victory,</h1>
-            <h1>en frontend udvikler... måske?</h1>
-            <br>
+        <div class="disclaimer">
+            <p>På 3. semester har vi kun "bundne forudsætninger"</p>
+            <p>Det er større opgaver som skal være afleveret inden man kan gå til eksamen</p>
+        </div>
+        <article class="studSem">
+            <div class="hobTextBox">
+                 <h3>BF 1 - To Do App</h3>
+                 <br>
+                 <p>Not done yet</p>
+            </div>
+            <div class="colorBox sem3color1 boxtype5">
 
-<div class="btnBox">
-<a href="ommig.html#kontakt"><button class="ctaBtn1">Kontakt mig</button></a>
-<a href="studie.html"><button class="ctaBtn2">Min erfaring</button></a>
-</div>
-
-        </article>
-        <article class="article2">
-            <img src="img/forside1.webp" alt="selfie">
+            </div>
         </article>
     </main>
 </body>

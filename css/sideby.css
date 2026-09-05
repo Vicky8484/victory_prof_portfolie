@@ -1,0 +1,209 @@
+/***********************GENERELT*********************/
+.studSem{
+    display: flex;
+}
+
+/*tekst boksen*/
+.textBox{
+    flex: 2;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.textBox p{
+    width: 62ch;
+}
+
+/*den farvede boks*/
+.colorBox{
+    height: 400px;
+    flex: 1;
+    overflow: hidden;
+    transition: background-color 5s ease;
+}
+
+.colorBox:hover{
+    background-color: var(--hover);
+}
+
+/*forskellige rundinger*/
+.boxtype1{
+    border-bottom-left-radius: 50px;
+}
+
+.boxtype2{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.boxtype3{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.boxtype4{
+    border-top-right-radius: 50px;
+}
+
+.boxtype5{
+    border-top-left-radius: 50px;
+}
+
+/********STUDIE SIDE*********/
+/*forskellige farver*/
+.sem1color{
+    background-color: #9A8886;
+}
+
+.sem2color{
+    background-color: #7C897F;
+}
+
+.sem3color{
+    background-color: #595270;
+}
+
+.sem4color{
+    background-color: #B2464C;
+}
+
+/********HOBBY SIDE*******/
+.disclaimer{
+    padding-block: 1rem;
+    text-align: center;
+}
+
+/*forskellige farver*/
+.hob1color{
+    background-color: #A4C5E2;
+}
+
+.hob2color{
+    background-color: #B6F290;
+}
+
+.hob3color{
+    background-color: #262626;
+}
+
+.hob4color{
+    background-color: #D5F5D1;
+}
+
+.hob5color{
+    background-color: #3F3F8F;
+}
+
+.hob6color{
+    background-color: #AD4A29;
+}
+
+.hob7color{
+    background-color: #EEA9A9;
+}
+
+.hob8color{
+    background-color: #F983A9;
+}
+
+.hob9color{
+    background-color: #63BC8E;
+}
+
+/*tekst boksen*/
+.hobTextBox{
+    flex: 2;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*********OM MIG************/
+
+.kontaktList{
+display: block;
+}
+
+.kontaktList a{
+  color: var(--hover);
+  transition: color 0.4s ease;
+}
+
+.link:hover{
+  color: var(--textcolor);
+  text-decoration: underline;
+}
+
+.omcolor{
+    background-color: #728C4F;
+}
+
+.ommigimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/**********1. SEMESTER**********/
+.sem1color1{
+    background-color: #F5F5DC;
+}
+
+.sem1color2{
+    background-color: #2B2D42;
+}
+
+.sem1color3{
+    background-color: #D77B55;
+}
+
+.sem1color4{
+    background-color: #A82828;
+}
+
+.sem1color5{
+    background-color: #EDB0BC;
+}
+
+
+.disclaimer2{
+    padding: 1rem;
+    width: 50ch;
+    text-align: center;
+}
+
+/**********2. SEMESTER**********/
+
+.sem2color1{
+    background-color: #C6A9AA;
+}
+
+.sem2color2{
+    background-color: #3C2B42;
+}
+
+.sem2color3{
+    background-color: #B22000;
+}
+
+.sem2color4{
+    background-color: #901E7C;
+}
+
+.sem2color5{
+    background-color: #D74C40;
+}
+
+/***********3. SEMESTER**********/
+
+.sem3color1{
+    background-color: var(--hover);
+}

@@ -100,6 +100,10 @@ button:hover{
   color: var(--hover2);
 }
 
+.active:hover{
+  color: var(--hover2);
+}
+
 /****KNAPPER (bortset fra headerknap)****/
 .ctaBtn1{
   background-color: var(--ctabtn1);

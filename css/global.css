@@ -31,15 +31,20 @@ font-family: "Fira Code", monospace;
 
 .forbogstav{
   color: var(--hover);
-    font-weight:900;
+  font-weight: 900;
+  transition: color 0.4s ease;
 }
 
 a{
   text-decoration: none;
 }
 
+.logo:hover .forbogstav{
+  color: var(--hover2);
+}
+
 .logo:hover{
-  font-size:larger;
+ font-size: larger;
 }
 
 /****HEADER****/
@@ -92,13 +97,17 @@ button:hover{
 }
 
 .active{
-  color: var(--hover);
+  color: var(--hover2);
 }
 
 /****KNAPPER (bortset fra headerknap)****/
 .ctaBtn1{
   background-color: var(--ctabtn1);
-color: var(--headertextcolor);
+color: var(--btn1color);
+}
+
+.ctaBtn1:hover{
+  background-color: var(--hover2);
 }
 
 .ctaBtn2{

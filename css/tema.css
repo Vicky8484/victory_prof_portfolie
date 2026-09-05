@@ -8,7 +8,8 @@
 --ctabtn1: #3B3B3B;
 --ctabtn2: #728C4F;
 --hover: #728C4F;
---hover2: #3B3B3B;
+--btn1color: #fff;
+--hover2: #584D72;
 }
 
 [data-theme="dark"]{
@@ -21,5 +22,6 @@
 --ctabtn1: #fff;
 --ctabtn2: #728C4F;
 --hover: #728C4F;
---hover2: #3B3B3B;
+--hover2: #584D72;
+--btn1color: #000;
 }

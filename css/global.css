@@ -19,6 +19,7 @@ font-family: "Fira Code", monospace;
   background-color: var(--bodybg);
   cursor: pointer;
   height: 100vh;
+  transition: background-color 1s ease;
 }
 
 /****LOGO****/
@@ -56,6 +57,7 @@ header{
     padding: 1rem;
     height: 4rem;
     align-items: center;
+    transition: background-color 1s ease;
 }
 
   #mobileMenuBtn{
@@ -130,6 +132,7 @@ main{
   margin: auto;
   background-color: var(--mainbg);
   color: var(--textcolor);
+  transition: background-color 1s ease;
 }
 
 /********************MOBIL QUERY********************/

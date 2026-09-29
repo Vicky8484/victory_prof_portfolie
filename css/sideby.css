@@ -211,3 +211,22 @@ display: block;
 .sem3color1{
     background-color: #A9A97D;
 }
+
+/**********Kunder****************/
+.kunderColor1{
+    background-color: #B7D5D4;
+}
+
+.expatthrive{
+    a{
+        color: var(--hover);
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    p{
+        text-wrap: balance;
+    }
+}

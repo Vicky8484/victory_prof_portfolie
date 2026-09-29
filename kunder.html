@@ -7,8 +7,8 @@
 
     <!-- CSS filer -->
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/forside.css">
     <link rel="stylesheet" href="css/tema.css">
+    <link rel="stylesheet" href="css/sideby.css">
 
     <!-- JS filer -->
      <script src="js/tema.js" defer></script>
@@ -17,8 +17,10 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 
+    
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon2.png">
+
 </head>
 <body data-theme="light">
     <header>
@@ -27,13 +29,13 @@
         <button id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
         <nav id="mainNavigation">
         <ul>
-            <!-- <li><a>Forside</a></li> -->
+            <li><a href="index.html">Forside</a></li>
             <li><a href="studie.html">Studie</a></li>
             <!-- <li><a>1. semester</a></li>
             <li><a>2. semester</a></li>
             <li><a>3. semester</a></li> -->
             <li><a href="hobby.html">Hobby</a></li>
-            <li><a href="kunder.html">Kunder</a></li>
+            <li><a href="kunder.html" class="active">Kunder</a></li>
             <li><a href="ommig.html">Om mig</a></li>
         </ul>
         </nav>
@@ -41,20 +43,22 @@
         <button id="changeBtn">Dark mode</button>
     </header>
     <main>
-        <article class="article1">
-            <h3>Hej.</h3>
-            <h1>Jeg er Victory,</h1>
-            <h1>en frontend udvikler... måske?</h1>
-            <br>
+        <div class="disclaimer">
+            <p>Dette er de betalte projekter <br>jeg har lavet ved siden af studiet</p>
+        </div>
 
-<div class="btnBox">
-<a href="ommig.html#kontakt"><button class="ctaBtn1">Kontakt mig</button></a>
-<a href="studie.html"><button class="ctaBtn2">Projekter</button></a>
-</div>
+        <article class="studSem">
+            <div class="textBox expatthrive">
+                 <h3>Expat Thrive</h3>
+                 <br>
+                 <p>På 2. semester kom jeg og min medstuderende <a href="https://www.linkedin.com/in/natasja-laursen-makiela-831257397/">Natasja Laursen</a> i kontakt med psykoterapeut <a href="https://www.linkedin.com/in/jakob-jakobsen-50a616427/">Jakob 
+                    Jakobsen</a> som skulle have bygget en hjemmeside for sin virksomhed, Expat Thrive.<br><br> Jakob skulle have mulighed for selv at redigere sidens indhold, så vi byggede den med WordPress. Vi havde ikke haft om CMS'er på studiet, men tog gerne udfordringen og efter 3 måneders arbejde, står siden endelig klar.</p>
+                 <br>
+                 <a href="https://expatthrive.dk"><button class="ctaBtn2">Webside</button></a>
+            </div>
+            <div class="colorBox kunderColor1 boxtype3">
 
-        </article>
-        <article class="article2">
-            <img src="img/forside1.webp" alt="selfie">
+            </div>
         </article>
     </main>
 </body>

@@ -209,7 +209,10 @@ display: block;
 /***********3. SEMESTER**********/
 
 .sem3color1{
-    background-color: #A9A97D;
+    background-color: #FFC0CB;
+}
+.sem3color2{
+    background-color: #FBC336;
 }
 
 /**********Kunder****************/
@@ -218,6 +221,7 @@ display: block;
 }
 
 .expatthrive{
+
     a{
         color: var(--hover);
 

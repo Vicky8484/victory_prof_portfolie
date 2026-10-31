@@ -1,68 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VictorY</title>
 
     <!-- CSS filer -->
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/tema.css">
-    <link rel="stylesheet" href="css/sideby.css">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/tema.css" />
+    <link rel="stylesheet" href="css/sideby.css" />
 
     <!-- JS filer -->
-     <script src="js/tema.js" defer></script>
+    <script src="js/tema.js" defer></script>
     <script src="js/mobile-menu.js" defer></script>
-    
+
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-    
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon2.png">
-
-</head>
-<body data-theme="light">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon2.png" />
+  </head>
+  <body data-theme="light">
     <header>
-        <a href="index.html"><h4 class="logo"><span class="forbogstav">V</span>ictorY</h4></a>
+      <a href="index.html"
+        ><h4 class="logo"><span class="forbogstav">V</span>ictorY</h4></a
+      >
 
-        <button id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
-        <nav id="mainNavigation">
+      <nav id="mainNavigation">
         <ul>
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="studie.html">Studie</a></li>
-            <li><a class="active">3. semester</a></li>
-            <li><a href="hobby.html">Hobby</a></li>
-            <li><a href="kunder.html">Kunder</a></li>
-            <li><a href="ommig.html">Om mig</a></li>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="studie.html">Studie</a></li>
+          <li><a class="active">3. semester</a></li>
+          <li><a href="hobby.html">Hobby</a></li>
+          <li><a href="kunder.html">Kunder</a></li>
+          <li><a href="ommig.html">Om mig</a></li>
         </ul>
-        </nav>
+      </nav>
 
+      <div class="headerBtns">
+        <button
+          id="mobileMenuBtn"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
         <button id="changeBtn">Dark mode</button>
+      </div>
     </header>
     <main>
-        <div class="disclaimer">
-            <p>På 3. semester har vi kun "bundne forudsætninger"</p>
-            <p>Det er større opgaver som skal være afleveret inden man kan gå til eksamen</p>
+      <div class="disclaimer">
+        <p>På 3. semester har vi kun "bundne forudsætninger"</p>
+        <p>
+          Det er større opgaver som skal være afleveret inden man kan gå til
+          eksamen
+        </p>
+      </div>
+      <article class="studSem">
+        <div class="hobTextBox">
+          <h3>BF 1 - To Do App</h3>
+          <br />
+          <a href="https://vicky8484.github.io/todo-app/"
+            ><button class="ctaBtn2">Webside</button></a
+          >
         </div>
-        <article class="studSem">
-            <div class="hobTextBox">
-                 <h3>BF 1 - To Do App</h3>
-                 <br>
-                 <a href="https://vicky8484.github.io/todo-app/"><button class="ctaBtn2">Webside</button></a>
-            </div>
-            <div class="colorBox sem3color1 boxtype3">
+        <div class="colorBox sem3color1 boxtype3"></div>
+      </article>
 
-            </div>
-        </article>
-         <article class="studSem">
-            <div class="colorBox sem3color2 boxtype4"></div>
-            <div class="hobTextBox">
-                 <h3>BF 2 - Figma til Kode</h3>
-                 <br>
-                 <a href="https://tema-opgave-juvi.netlify.app/"><button class="ctaBtn2">Webside</button></a>
-            </div>
-        </article>
+      <article class="studSem">
+        <div class="colorBox sem3color2 boxtype2"></div>
+        <div class="hobTextBox">
+          <h3>BF 2 - Figma til Kode</h3>
+          <br />
+          <a href="https://tema-opgave-juvi.netlify.app/"
+            ><button class="ctaBtn2">Webside</button></a
+          >
+        </div>
+      </article>
+
+      <article class="studSem">
+        <div class="hobTextBox">
+          <h3>FamilyFriends</h3>
+          <br />
+          <a href="https://familyfriends-sigma.vercel.app/"
+            ><button class="ctaBtn2">Webside</button></a
+          >
+        </div>
+        <div class="colorBox sem3color3 boxtype5"></div>
+      </article>
     </main>
-</body>
+  </body>
 </html>

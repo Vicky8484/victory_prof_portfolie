@@ -1,36 +1,35 @@
-body{
-     overflow: hidden;
-}
-    
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: calc(100vh - 4rem);
-    overflow: hidden;
-    align-items: center;
+body {
+  overflow: hidden;
 }
 
-.article1{
-padding: 3rem;
-flex: 2;
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vh - 4rem);
+  overflow: hidden;
+  align-items: center;
 }
 
-.article2{
-    display: block;
-flex: 1;
-height: 80%;
-overflow: hidden;
-display: flex;
-justify-content: flex-end;
+.article1 {
+  padding: 3rem;
+  flex: 2;
 }
 
-.article2 img{
-display: block;
-height: 100%;
-width: auto;
-max-width: 100%;
-object-fit: contain;
-object-position: center;
-filter:brightness(80%);
+.article2 {
+  display: block;
+  flex: 1;
+  height: 80%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
 }
 
+.article2 img {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+  filter: brightness(80%);
+}

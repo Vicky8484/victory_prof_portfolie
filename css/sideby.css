@@ -127,6 +127,10 @@
   background-color: #51a2ff;
 }
 
+.hob13color {
+  background-color: #601728;
+}
+
 /*tekst boksen*/
 .hobTextBox {
   flex: 2;
@@ -220,6 +224,9 @@
 }
 .sem3color2 {
   background-color: #fbc336;
+}
+.sem3color3 {
+  background-color: #f2968f;
 }
 
 /**********Kunder****************/

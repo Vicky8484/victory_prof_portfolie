@@ -1,65 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VictorY</title>
 
     <!-- CSS filer -->
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/tema.css">
-    <link rel="stylesheet" href="css/sideby.css">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/tema.css" />
+    <link rel="stylesheet" href="css/sideby.css" />
 
     <!-- JS filer -->
-     <script src="js/tema.js" defer></script>
-     <script src="js/mobile-menu.js" defer></script>
-    
+    <script src="js/tema.js" defer></script>
+    <script src="js/mobile-menu.js" defer></script>
+
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-    
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon2.png">
-
-</head>
-<body data-theme="light">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon2.png" />
+  </head>
+  <body data-theme="light">
     <header>
-        <a href="index.html"><h4 class="logo"><span class="forbogstav">V</span>ictorY</h4></a>
+      <a href="index.html"
+        ><h4 class="logo"><span class="forbogstav">V</span>ictorY</h4></a
+      >
 
-        <button id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
-        <nav id="mainNavigation">
+      <nav id="mainNavigation">
         <ul>
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="studie.html">Studie</a></li>
-            <!-- <li><a>1. semester</a></li>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="studie.html">Studie</a></li>
+          <!-- <li><a>1. semester</a></li>
             <li><a>2. semester</a></li>
             <li><a>3. semester</a></li> -->
-            <li><a href="hobby.html">Hobby</a></li>
-            <li><a href="kunder.html" class="active">Kunder</a></li>
-            <li><a href="ommig.html">Om mig</a></li>
+          <li><a href="hobby.html">Hobby</a></li>
+          <li><a href="kunder.html" class="active">Kunder</a></li>
+          <li><a href="ommig.html">Om mig</a></li>
         </ul>
-        </nav>
+      </nav>
 
+      <div class="headerBtns">
+        <button
+          id="mobileMenuBtn"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
         <button id="changeBtn">Dark mode</button>
+      </div>
     </header>
     <main>
-        <div class="disclaimer">
-            <p>Dette er de betalte projekter <br>jeg har lavet ved siden af studiet</p>
+      <div class="disclaimer">
+        <p>
+          Dette er de betalte projekter <br />jeg har lavet ved siden af studiet
+        </p>
+      </div>
+
+      <article class="studSem">
+        <div class="textBox expatthrive">
+          <h3>Expat Thrive</h3>
+          <br />
+          <p>
+            På 2. semester kom min medstuderende
+            <a
+              href="https://www.linkedin.com/in/natasja-laursen-makiela-831257397/"
+              >Natasja Laursen</a
+            >
+            og jeg i kontakt med psykoterapeut
+            <a href="https://www.linkedin.com/in/jakob-jakobsen-50a616427/"
+              >Jakob Jakobsen</a
+            >
+            som skulle have bygget en hjemmeside for sin virksomhed, Expat
+            Thrive.
+          </p>
+          <br />
+          <a href="https://expatthrive.dk"
+            ><button class="ctaBtn2">Webside</button></a
+          >
         </div>
-
-        <article class="studSem">
-            <div class="textBox expatthrive">
-                 <h3>Expat Thrive</h3>
-                 <br>
-                 <p>På 2. semester kom min medstuderende <a href="https://www.linkedin.com/in/natasja-laursen-makiela-831257397/">Natasja Laursen</a> og jeg i kontakt med psykoterapeut <a href="https://www.linkedin.com/in/jakob-jakobsen-50a616427/">Jakob 
-                    Jakobsen</a> som skulle have bygget en hjemmeside for sin virksomhed, Expat Thrive.</p>
-                    <br>
-                 <a href="https://expatthrive.dk"><button class="ctaBtn2">Webside</button></a>
-            </div>
-            <div class="colorBox kunderColor1 boxtype3">
-
-            </div>
-        </article>
+        <div class="colorBox kunderColor1 boxtype3"></div>
+      </article>
     </main>
-</body>
+  </body>
 </html>

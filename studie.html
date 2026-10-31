@@ -6,9 +6,7 @@
     <title>VictorY</title>
 
     <!-- CSS filer -->
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/tema.css" />
-    <link rel="stylesheet" href="css/sideby.css" />
+    <link rel="stylesheet" href="css/site.css" />
 
     <!-- JS filer -->
     <script src="js/tema.js" defer></script>
@@ -23,16 +21,16 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon2.png" />
   </head>
-  <body data-theme="light">
-    <header>
+  <body class="h-screen font-code cursor-pointer bg-body-bg transition-[background-color] duration-1000" data-theme="light">
+    <header class="flex justify-between items-center h-16 px-4 py-4 text-text-color bg-header-bg transition-[background-color] duration-1000 max-[800px]:relative max-[800px]:z-[2]">
       <a href="index.html"
-        ><h4 class="logo"><span class="forbogstav">V</span>ictorY</h4></a
+        ><h4 class="group text-header-text text-lg font-normal transition-[font-size] duration-[400ms] hover:text-xl"><span class="font-black text-accent transition-colors duration-[400ms] group-hover:text-accent-hover">V</span>ictorY</h4></a
       >
 
       <nav id="mainNavigation">
-        <ul>
+        <ul class="flex justify-between gap-12 list-none max-[800px]:flex-col max-[800px]:items-start max-[800px]:gap-6">
           <li><a href="index.html">Forside</a></li>
-          <li><a href="studie.html" class="active">Studie</a></li>
+          <li><a href="studie.html" class="text-accent-hover hover:text-accent-hover">Studie</a></li>
           <!-- <li><a>1. semester</a></li>
             <li><a>2. semester</a></li>
             <li><a>3. semester</a></li> -->
@@ -42,9 +40,10 @@
         </ul>
       </nav>
 
-      <div class="headerBtns">
+      <div class="flex gap-4">
         <button
           id="mobileMenuBtn"
+          class="hidden max-[800px]:block w-auto p-2 text-[1.4rem] leading-none z-[3] bg-header-bg border-0 text-header-text hover:text-accent"
           aria-label="Open navigation menu"
           aria-expanded="false"
         >
@@ -53,9 +52,9 @@
         <button id="changeBtn">Dark mode</button>
       </div>
     </header>
-    <main>
-      <article class="studSem">
-        <div class="textBox">
+    <main class="mx-auto w-4/5 bg-main-bg text-text-color transition-[background-color] duration-1000 max-[800px]:w-full max-[800px]:block">
+      <article class="flex max-[800px]:w-full">
+        <div class="flex-[2] py-8 pl-8 flex flex-col items-start justify-center text-left max-[800px]:min-w-0 max-[800px]:p-4 [&_p]:w-[62ch] max-[800px]:[&_p]:w-full max-[800px]:[&_p]:max-w-[62ch]">
           <h3>1. semester</h3>
           <br />
           <p>
@@ -63,13 +62,13 @@
             og det mest absolut minimale JavaScript
           </p>
           <br />
-          <a href="sem1.html"><button class="ctaBtn2">Projekter</button></a>
+          <a href="sem1.html"><button class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text">Projekter</button></a>
         </div>
-        <div class="colorBox sem1color boxtype1"></div>
+        <div class="h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] hover:bg-accent max-[800px]:min-w-0 bg-study-1 rounded-bl-box"></div>
       </article>
-      <article class="studSem">
-        <div class="colorBox sem2color boxtype2"></div>
-        <div class="textBox">
+      <article class="flex max-[800px]:w-full">
+        <div class="h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] hover:bg-accent max-[800px]:min-w-0 bg-study-2 rounded-tr-box rounded-br-box"></div>
+        <div class="flex-[2] py-8 pl-8 flex flex-col items-start justify-center text-left max-[800px]:min-w-0 max-[800px]:p-4 [&_p]:w-[62ch] max-[800px]:[&_p]:w-full max-[800px]:[&_p]:max-w-[62ch]">
           <h3>2. semester</h3>
           <br />
           <p>
@@ -77,11 +76,11 @@
             hente data fra jsonAPI'er
           </p>
           <br />
-          <a href="sem2.html"><button class="ctaBtn2">Projekter</button></a>
+          <a href="sem2.html"><button class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text">Projekter</button></a>
         </div>
       </article>
-      <article class="studSem">
-        <div class="textBox">
+      <article class="flex max-[800px]:w-full">
+        <div class="flex-[2] py-8 pl-8 flex flex-col items-start justify-center text-left max-[800px]:min-w-0 max-[800px]:p-4 [&_p]:w-[62ch] max-[800px]:[&_p]:w-full max-[800px]:[&_p]:max-w-[62ch]">
           <h3>3. semester</h3>
           <br />
           <p>
@@ -90,18 +89,18 @@
             hurtigt, og jeg prøver at følge med (hjælp)
           </p>
           <br />
-          <a href="sem3.html"><button class="ctaBtn2">Projekter</button></a>
+          <a href="sem3.html"><button class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text">Projekter</button></a>
         </div>
-        <div class="colorBox sem3color boxtype3"></div>
+        <div class="h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] hover:bg-accent max-[800px]:min-w-0 bg-study-3 rounded-tl-box rounded-bl-box"></div>
       </article>
-      <article class="studSem">
-        <div class="colorBox sem4color boxtype4"></div>
-        <div class="textBox">
+      <article class="flex max-[800px]:w-full">
+        <div class="h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] hover:bg-accent max-[800px]:min-w-0 bg-study-4 rounded-tr-box"></div>
+        <div class="flex-[2] py-8 pl-8 flex flex-col items-start justify-center text-left max-[800px]:min-w-0 max-[800px]:p-4 [&_p]:w-[62ch] max-[800px]:[&_p]:w-full max-[800px]:[&_p]:max-w-[62ch]">
           <h3>4. semester</h3>
           <br />
           <p>Så langt er jeg ikke nået endnu...</p>
           <br />
-          <!-- <a href="sem4.html"><button class="ctaBtn2">Projekter</button></a> -->
+          <!-- <a href="sem4.html"><button class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text">Projekter</button></a> -->
         </div>
       </article>
     </main>
@@ -109,6 +108,6 @@
 </html>
 
 <!-- <div class="btnBox">
-<a href="ommig.html"><button class="ctaBtn1">Kontakt mig</button></a>
-<a href="studie.html"><button class="ctaBtn2">Min erfaring</button></a>
+<a href="ommig.html"><button class="bg-cta-primary text-cta-primary-text hover:bg-accent-hover">Kontakt mig</button></a>
+<a href="studie.html"><button class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text">Min erfaring</button></a>
 </div> -->

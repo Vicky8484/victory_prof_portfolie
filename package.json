@@ -1,0 +1,29 @@
+{
+  "name": "victorys-pf-fr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/tailwind.css -o ./css/site.css --minify",
+    "watch:css": "tailwindcss -i ./css/tailwind.css -o ./css/site.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vicky8484/victorys-pf-fr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Vicky8484/victorys-pf-fr/issues"
+  },
+  "homepage": "https://github.com/Vicky8484/victorys-pf-fr#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "prettier": "^3.9.10",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.3"
+  }
+}

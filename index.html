@@ -6,9 +6,7 @@
     <title>VictorY</title>
 
     <!-- CSS filer -->
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/forside.css" />
-    <link rel="stylesheet" href="css/tema.css" />
+    <link rel="stylesheet" href="css/site.css" />
 
     <!-- JS filer -->
     <script src="js/tema.js" defer></script>
@@ -23,14 +21,28 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon2.png" />
   </head>
-  <body data-theme="light">
-    <header>
+  <body
+    class="font-code bg-body-bg h-screen cursor-pointer overflow-hidden transition-[background-color] duration-1000"
+    data-theme="light"
+  >
+    <header
+      class="text-text-color bg-header-bg flex h-16 items-center justify-between px-4 py-4 transition-[background-color] duration-1000 max-[800px]:relative max-[800px]:z-2"
+    >
       <a href="index.html"
-        ><h4 class="logo"><span class="forbogstav">V</span>ictorY</h4></a
+        ><h4
+          class="group text-header-text text-lg font-normal transition-[font-size] duration-400 hover:text-xl"
+        >
+          <span
+            class="text-accent group-hover:text-accent-hover font-black transition-colors duration-400"
+            >V</span
+          >ictorY
+        </h4></a
       >
 
       <nav id="mainNavigation">
-        <ul>
+        <ul
+          class="flex list-none justify-between gap-12 max-[800px]:flex-col max-[800px]:items-start max-[800px]:gap-6"
+        >
           <!-- <li><a>Forside</a></li> -->
           <li><a href="studie.html">Studie</a></li>
           <!-- <li><a>1. semester</a></li>
@@ -42,9 +54,10 @@
         </ul>
       </nav>
 
-      <div class="headerBtns">
+      <div class="flex gap-4">
         <button
           id="mobileMenuBtn"
+          class="bg-header-bg text-header-text hover:text-accent z-[3] hidden w-auto border-0 p-2 text-[1.4rem] leading-none max-[800px]:block"
           aria-label="Open navigation menu"
           aria-expanded="false"
         >
@@ -53,8 +66,10 @@
         <button id="changeBtn">Dark mode</button>
       </div>
     </header>
-    <main>
-      <article class="article1">
+    <main
+      class="bg-main-bg text-text-color mx-auto grid h-[calc(100vh-4rem)] w-4/5 grid-cols-2 items-center overflow-hidden transition-[background-color] duration-1000 max-[800px]:block max-[800px]:w-full"
+    >
+      <article class="flex-2 p-12">
         <h3>Hej.</h3>
         <h1>Jeg er Victory,</h1>
         <h1>en frontend udvikler... måske?</h1>
@@ -62,13 +77,29 @@
 
         <div class="btnBox">
           <a href="ommig.html#kontakt"
-            ><button class="ctaBtn1">Kontakt mig</button></a
+            ><button
+              class="bg-cta-primary text-cta-primary-text hover:bg-accent-hover"
+            >
+              Kontakt mig
+            </button></a
           >
-          <a href="studie.html"><button class="ctaBtn2">Projekter</button></a>
+          <a href="studie.html"
+            ><button
+              class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text"
+            >
+              Projekter
+            </button></a
+          >
         </div>
       </article>
-      <article class="article2">
-        <img src="img/forside1.webp" alt="selfie" />
+      <article
+        class="flex h-4/5 flex-1 justify-end overflow-hidden max-[800px]:hidden"
+      >
+        <img
+          class="block h-full w-auto max-w-full object-contain object-center brightness-80"
+          src="img/forside1.webp"
+          alt="selfie"
+        />
       </article>
     </main>
   </body>

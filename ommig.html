@@ -6,9 +6,7 @@
     <title>VictorY</title>
 
     <!-- CSS filer -->
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/tema.css" />
-    <link rel="stylesheet" href="css/sideby.css" />
+    <link rel="stylesheet" href="css/site.css" />
 
     <!-- JS filer -->
     <script src="js/tema.js" defer></script>
@@ -23,14 +21,14 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon2.png" />
   </head>
-  <body data-theme="light">
-    <header>
+  <body class="h-screen font-code cursor-pointer bg-body-bg transition-[background-color] duration-1000" data-theme="light">
+    <header class="flex justify-between items-center h-16 px-4 py-4 text-text-color bg-header-bg transition-[background-color] duration-1000 max-[800px]:relative max-[800px]:z-[2]">
       <a href="index.html"
-        ><h4 class="logo"><span class="forbogstav">V</span>ictorY</h4></a
+        ><h4 class="group text-header-text text-lg font-normal transition-[font-size] duration-[400ms] hover:text-xl"><span class="font-black text-accent transition-colors duration-[400ms] group-hover:text-accent-hover">V</span>ictorY</h4></a
       >
 
       <nav id="mainNavigation">
-        <ul>
+        <ul class="flex justify-between gap-12 list-none max-[800px]:flex-col max-[800px]:items-start max-[800px]:gap-6">
           <li><a href="index.html">Forside</a></li>
           <li><a href="studie.html">Studie</a></li>
           <!-- <li><a>1. semester</a></li>
@@ -38,13 +36,14 @@
             <li><a>3. semester</a></li> -->
           <li><a href="hobby.html">Hobby</a></li>
           <li><a href="kunder.html">Kunder</a></li>
-          <li><a href="ommig.html" class="active">Om mig</a></li>
+          <li><a href="ommig.html" class="text-accent-hover hover:text-accent-hover">Om mig</a></li>
         </ul>
       </nav>
 
-      <div class="headerBtns">
+      <div class="flex gap-4">
         <button
           id="mobileMenuBtn"
+          class="hidden max-[800px]:block w-auto p-2 text-[1.4rem] leading-none z-[3] bg-header-bg border-0 text-header-text hover:text-accent"
           aria-label="Open navigation menu"
           aria-expanded="false"
         >
@@ -53,9 +52,9 @@
         <button id="changeBtn">Dark mode</button>
       </div>
     </header>
-    <main>
-      <article class="studSem">
-        <div class="textBox">
+    <main class="mx-auto w-4/5 bg-main-bg text-text-color transition-[background-color] duration-1000 max-[800px]:w-full max-[800px]:block">
+      <article class="flex max-[800px]:w-full">
+        <div class="flex-[2] py-8 pl-8 flex flex-col items-start justify-center text-left max-[800px]:min-w-0 max-[800px]:p-4 [&_p]:w-[62ch] max-[800px]:[&_p]:w-full max-[800px]:[&_p]:max-w-[62ch]">
           <h3>Om mig</h3>
           <br />
           <p>
@@ -77,34 +76,34 @@
             AI-uhyre).
           </p>
         </div>
-        <div class="colorBox boxtype1">
+        <div class="h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] hover:bg-accent max-[800px]:min-w-0 rounded-bl-box">
           <img
-            class="ommigimg"
+            class="block w-full h-full object-cover"
             src="img/ommigpfp.webp"
             alt="billede af Victory"
           />
         </div>
       </article>
-      <article class="studSem">
-        <div class="colorBox omcolor boxtype4"></div>
-        <div id="kontakt" class="textBox">
+      <article class="flex max-[800px]:w-full">
+        <div class="h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] hover:bg-accent max-[800px]:min-w-0 bg-accent rounded-tr-box"></div>
+        <div id="kontakt" class="flex-[2] py-8 pl-8 flex flex-col items-start justify-center text-left max-[800px]:min-w-0 max-[800px]:p-4 [&_p]:w-[62ch] max-[800px]:[&_p]:w-full max-[800px]:[&_p]:max-w-[62ch]">
           <h3>Kontakt mig</h3>
           <br />
-          <ul class="kontaktList">
+          <ul class="block list-none">
             <li>Telefon: (+45) 91 76 70 67</li>
             <br />
             <li>Mail: viok0001@stud.ek.dk</li>
             <br />
             <li>
               <a
-                class="link"
+                class="text-accent transition-colors duration-[400ms] hover:text-text-color hover:underline"
                 href="https://www.linkedin.com/in/victory-omoniyoyah-okosun-782320267/"
                 >LinkedIn</a
               >
             </li>
             <br />
             <li>
-              <a class="link" href="https://github.com/Vicky8484">Github</a>
+              <a class="text-accent transition-colors duration-[400ms] hover:text-text-color hover:underline" href="https://github.com/Vicky8484">Github</a>
             </li>
           </ul>
         </div>

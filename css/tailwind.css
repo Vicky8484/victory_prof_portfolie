@@ -54,7 +54,7 @@
   --color-sem3-1: #ffc0cb;
   --color-sem3-2: #fbc336;
   --color-sem3-3: #f2968f;
-  --color-sem3-4: #9abdd6;
+  --color-sem3-4: #c7e4f2;
 
   --color-customer-1: #b7d5d4;
   --radius-box: 50px;
@@ -106,7 +106,7 @@
   }
 
   button {
-    @apply w-[130px] py-2 font-code rounded-[7px] bg-header-button cursor-pointer transition-[background-color] duration-[400ms];
+    @apply font-code bg-header-button w-[130px] cursor-pointer rounded-[7px] py-2 transition-[background-color] duration-[400ms];
   }
 
   button:hover {

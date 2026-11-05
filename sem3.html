@@ -21,17 +21,33 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon2.png" />
   </head>
-  <body class="h-screen font-code cursor-pointer bg-body-bg transition-[background-color] duration-1000" data-theme="light">
-    <header class="flex justify-between items-center h-16 px-4 py-4 text-text-color bg-header-bg transition-[background-color] duration-1000 max-[800px]:relative max-[800px]:z-[2]">
+  <body
+    class="font-code bg-body-bg h-screen cursor-pointer transition-[background-color] duration-1000"
+    data-theme="light"
+  >
+    <header
+      class="text-text-color bg-header-bg flex h-16 items-center justify-between px-4 py-4 transition-[background-color] duration-1000 max-[800px]:relative max-[800px]:z-[2]"
+    >
       <a href="index.html"
-        ><h4 class="group text-header-text text-lg font-normal transition-[font-size] duration-[400ms] hover:text-xl"><span class="font-black text-accent transition-colors duration-[400ms] group-hover:text-accent-hover">V</span>ictorY</h4></a
+        ><h4
+          class="group text-header-text text-lg font-normal transition-[font-size] duration-[400ms] hover:text-xl"
+        >
+          <span
+            class="text-accent group-hover:text-accent-hover font-black transition-colors duration-[400ms]"
+            >V</span
+          >ictorY
+        </h4></a
       >
 
       <nav id="mainNavigation">
-        <ul class="flex justify-between gap-12 list-none max-[800px]:flex-col max-[800px]:items-start max-[800px]:gap-6">
+        <ul
+          class="flex list-none justify-between gap-12 max-[800px]:flex-col max-[800px]:items-start max-[800px]:gap-6"
+        >
           <li><a href="index.html">Forside</a></li>
           <li><a href="studie.html">Studie</a></li>
-          <li><a class="text-accent-hover hover:text-accent-hover">3. semester</a></li>
+          <li>
+            <a class="text-accent-hover hover:text-accent-hover">3. semester</a>
+          </li>
           <li><a href="hobby.html">Hobby</a></li>
           <li><a href="kunder.html">Kunder</a></li>
           <li><a href="ommig.html">Om mig</a></li>
@@ -41,7 +57,7 @@
       <div class="flex gap-4">
         <button
           id="mobileMenuBtn"
-          class="hidden max-[800px]:block w-auto p-2 text-[1.4rem] leading-none z-[3] bg-header-bg border-0 text-header-text hover:text-accent"
+          class="bg-header-bg text-header-text hover:text-accent z-[3] hidden w-auto border-0 p-2 text-[1.4rem] leading-none max-[800px]:block"
           aria-label="Open navigation menu"
           aria-expanded="false"
         >
@@ -50,7 +66,9 @@
         <button id="changeBtn">Dark mode</button>
       </div>
     </header>
-    <main class="mx-auto w-4/5 bg-main-bg text-text-color transition-[background-color] duration-1000 max-[800px]:w-full max-[800px]:block">
+    <main
+      class="bg-main-bg text-text-color mx-auto w-4/5 transition-[background-color] duration-1000 max-[800px]:block max-[800px]:w-full"
+    >
       <div class="py-4 text-center">
         <p>På 3. semester har vi kun "bundne forudsætninger"</p>
         <p>
@@ -59,54 +77,86 @@
         </p>
       </div>
       <article class="flex max-[800px]:w-full">
-        <div class="flex-[2] py-8 flex flex-col items-center justify-center text-center max-[800px]:min-w-0 max-[800px]:p-4">
+        <div
+          class="flex flex-[2] flex-col items-center justify-center py-8 text-center max-[800px]:min-w-0 max-[800px]:p-4"
+        >
           <h3>BF 1 - To Do App</h3>
           <br />
           <p>Vanilla JS</p>
           <br />
           <a href="https://vicky8484.github.io/todo-app/"
-            ><button class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text">Webside</button></a
+            ><button
+              class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text"
+            >
+              Webside
+            </button></a
           >
         </div>
-        <div class="h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] hover:bg-accent max-[800px]:min-w-0 bg-sem3-1 rounded-tl-box rounded-bl-box"></div>
+        <div
+          class="hover:bg-accent bg-sem3-1 rounded-tl-box rounded-bl-box h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] max-[800px]:min-w-0"
+        ></div>
       </article>
 
       <article class="flex max-[800px]:w-full">
-        <div class="h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] hover:bg-accent max-[800px]:min-w-0 bg-sem3-2 rounded-tr-box rounded-br-box"></div>
-        <div class="flex-[2] py-8 flex flex-col items-center justify-center text-center max-[800px]:min-w-0 max-[800px]:p-4">
+        <div
+          class="hover:bg-accent bg-sem3-2 rounded-tr-box rounded-br-box h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] max-[800px]:min-w-0"
+        ></div>
+        <div
+          class="flex flex-[2] flex-col items-center justify-center py-8 text-center max-[800px]:min-w-0 max-[800px]:p-4"
+        >
           <h3>BF 2 - Figma til Kode</h3>
           <br />
           <p>Bleeding Edge CSS</p>
           <br />
           <a href="https://tema-opgave-juvi.netlify.app/"
-            ><button class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text">Webside</button></a
+            ><button
+              class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text"
+            >
+              Webside
+            </button></a
           >
         </div>
       </article>
 
       <article class="flex max-[800px]:w-full">
-        <div class="flex-[2] py-8 flex flex-col items-center justify-center text-center max-[800px]:min-w-0 max-[800px]:p-4">
+        <div
+          class="flex flex-[2] flex-col items-center justify-center py-8 text-center max-[800px]:min-w-0 max-[800px]:p-4"
+        >
           <h3>FamilyFriends</h3>
           <br />
           <p>Next.js/React <br />Data fetching</p>
           <br />
           <a href="https://familyfriends-sigma.vercel.app/"
-            ><button class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text">Webside</button></a
+            ><button
+              class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text"
+            >
+              Webside
+            </button></a
           >
         </div>
-        <div class="h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] hover:bg-accent max-[800px]:min-w-0 bg-sem3-3 rounded-tl-box rounded-bl-box"></div>
+        <div
+          class="hover:bg-accent bg-sem3-3 rounded-tl-box rounded-bl-box h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] max-[800px]:min-w-0"
+        ></div>
       </article>
 
       <article class="flex max-[800px]:w-full">
-        <div class="h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] hover:bg-accent max-[800px]:min-w-0 bg-sem3-4 rounded-tr-box"></div>
-        <div class="flex-[2] py-8 flex flex-col items-center justify-center text-center max-[800px]:min-w-0 max-[800px]:p-4">
+        <div
+          class="hover:bg-accent bg-sem3-4 rounded-tr-box h-[400px] flex-1 overflow-hidden transition-[background-color] duration-[5000ms] max-[800px]:min-w-0"
+        ></div>
+        <div
+          class="flex flex-[2] flex-col items-center justify-center py-8 text-center max-[800px]:min-w-0 max-[800px]:p-4"
+        >
           <h3>BF 3 - Simpel Webshop</h3>
           <br />
           <p>Next.js/React <br />Data fetching</p>
           <br />
-          <!-- <a href="https://familyfriends-sigma.vercel.app/"
-            ><button class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text">Webside</button></a
-          > -->
+          <a href="https://en-simple-webshop-git-main-my-team-4323.vercel.app/"
+            ><button
+              class="bg-cta-secondary text-header-text hover:bg-accent-hover hover:text-header-text"
+            >
+              Webside
+            </button></a
+          >
         </div>
       </article>
     </main>
